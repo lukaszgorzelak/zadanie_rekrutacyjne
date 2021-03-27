@@ -18,7 +18,7 @@ const htmlText = `<div class="new-text">
     $(this).css('cursor', 'text').attr('title', 'Zmień nagłówek');
   });
 
-  $('.article-title-box').one('click',function(){
+  $('.change').one('click',function(){
     $(this).append(htmlTitle);
   
     $('input').on('input', function(){ 
@@ -32,7 +32,7 @@ const htmlText = `<div class="new-text">
     });
   });
 
-  $('.article-text-box').one('click',function(){
+  $('.change-text').one('click',function(){
     $(this).append(htmlText);
   
     $('input.input-text').on('input', function(){ 
