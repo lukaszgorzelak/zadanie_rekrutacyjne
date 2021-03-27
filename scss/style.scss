@@ -1,0 +1,131 @@
+* {
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+  font-weight: 300;
+}
+
+$article-bgcolor: #215398;
+$article-second-bgcolor: #F1F6FC;
+$box-bgcolor: white;
+$box-color-text: #808080;
+$box-color-title: #2D3236;
+
+.container{
+  // width: 1920px;
+  // margin: 0 auto;
+}
+
+#logo{
+  height: 84px;
+  img{
+    margin-top: 23px;
+    margin-bottom: 23px;
+    margin-left: 13%;
+  }
+}
+
+article{
+  text-align: center;
+  background-color: $article-bgcolor;
+  min-height: 466px;
+  color: white;
+  .article-title{
+    padding-top:49px;
+    font-size: 40px;
+    line-height: 52px;
+  }
+  .article-text{
+    padding-top:5px;
+    font-size: 20px;
+    line-height: 32px;
+  }
+  .wrapper{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    .carousel{
+      width:90%;
+      margin: 20px;
+      .slick-next {
+        right: -23px;
+    }
+      .box{
+        height: 228px;
+        width: 90% !important;
+        background-color: $box-bgcolor;
+      }
+    }
+      .article-title-box{
+        font-size: 20px;
+        line-height: 23.7px;
+        padding-top:36.3px;
+        color: $box-color-title;
+        width: auto;
+      }
+      .article-text-box{
+        font-size: 15px;
+        line-height: 24px;
+        color: $box-color-text;
+        margin-top: 12px;
+      }
+      i{
+        color:#BABFC6;
+        font-size: 42px;
+        margin-top: 12px;
+       }
+     }
+     .box-two{
+      padding: 5px;
+    }
+    .box-three{
+      width: 277px;
+      margin: auto;
+    }
+  }
+
+
+article.second{
+  background-color: $article-second-bgcolor;
+  .article-title{
+    color: $box-color-title;
+  }
+  .article-text-box{
+    color: $box-color-title;
+  }
+  h2{
+    font-size: 30px;
+    margin-top: 36px;
+    margin-bottom: 24px;
+  }
+ 
+  .box{
+    margin-bottom: 72px;
+    height: 228px;
+    width: 332px;
+    margin:20px;
+    background-color: $box-bgcolor;
+  }
+}
+
+.second-title::before{
+  content: '';
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #FF3859;
+  position: absolute;
+  transform: translate(180%, -200%);
+}
+
+.new-text{
+ display: block;
+}
+
+@media all and (max-width:700px) {
+  .article-text-box{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
