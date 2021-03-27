@@ -59,8 +59,7 @@ article {
     margin: auto; }
 
 article.second {
-  background-color: #F1F6FC;
-  min-height: 600px; }
+  background-color: #F1F6FC; }
   article.second .article-title {
     color: #2D3236; }
   article.second .article-text-box {
